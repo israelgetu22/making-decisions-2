@@ -136,12 +136,12 @@ for (let i = letters.length - 1; i >= 0; i--) {
 ////////// Advanced Problems //////////
 
 ////////// PROBLEM 10 //////////
-// Switch statements can be excellent alternatives to if blocks. Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
+// Switch statements can be excellent alternatives to if blocks. Look up switch
+//statements (I recommend W3 Schools) and try to implement one for the following.
 
 // Do not edit the code below.
 let letterGrade = "B";
 // Do not edit the code above.
-
 /* Use a switch statement on 'letterGrade' and console.log the appropriate response.
 
 If A: "The student is doing excellently."
@@ -153,7 +153,25 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
-
+switch (letterGrade) {
+  case "A":
+    console.log("The student is doing excellently.");
+    break;
+  case "B":
+    console.log("The student is doing well.");
+    break;
+  case "C":
+    console.log("The student is doing alright.");
+    break;
+  case "D":
+    console.log("The student is not doing very well.");
+    break;
+  case "F":
+    console.log("The student is failing");
+    break;
+  default:
+    console.log("Not an eligible grade.");
+}
 ////////// PROBLEM 11 //////////
 /* The famous FizzBuzz, Devmountain style!
   Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, 
